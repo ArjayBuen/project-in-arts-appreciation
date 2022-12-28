@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>REGION IV-A CALABARZON</title>
+        <link rel="stylesheet" type="text/css" href="sculp.css">
+    </head>
+    <body>
+        <header>
+            <div class="containr">
+                <div class="navbar">
+                    <image src="img/logo.png" class="logo">
+                        <nav>
+                            <ul id="menuList">
+                                <li><a href="index.html" target="_self">HOME</a></li>
+                                <li><a href="index.html#about" target="_self">ABOUT</a></li>
+                                <li><a href="archi.html#archi" target="_self">ARCHITECTURES</a></li>
+                                <li><a href="#">SCULPTURE</a></li>
+                                <li><a href="crafts.html#crafts" target="_self">CRAFTS</a></li>
+                                <li><a href="paint.html#paint" target="_self">PAINTINGS</a></li>
+                                <li><a href="artist.html#artist" target="_self">ARTISTS</a></li>
+                            </ul>
+                        </nav>
+                    <image src="img/menu.png" class="menu" onclick="togglemenu()">
+                </div>
+            </div>
+            <div class="intro">
+                <h1>Discover</h1>
+                <h2>Culture and Creativity</h2>
+                <h3>in Region IV-A</h3>
+                <img src="img/down.png" width="130px" height="70px" class="down">
+            </div>  
+        </header>
+        <script>
+            var menuList= document.getElementById("menuList");
+            menuList.style.maxHeight="0px";
+            function togglemenu(){
+                if(menuList.style.maxHeight=="0px"){
+                    menuList.style.maxHeight="199px"
+                }
+                else{
+                    menuList.style.maxHeight="0px"
+                }
+            }
+        </script>
+<!-------------------------------------------Sculpture------------------------------------>
+<section class="wrapper" id="sculp">
+    <h1>SCULPTURE</h1>
+    <div class="features-grid-container">
+        <div class="d-flex-r features-grid-row" id="first-row">
+            <div class="features-grid-row-halfone w-50">
+                <div class="d-flex-c contain-img">
+                    <img src="img/s1a.jpg" class="image">
+                    <img src="img/s1c.jpg" class="image">
+                    <img src="img/s1b.jpg" class="image">
+                    <img src="img/s2a.jpg" class="image">
+                </div>
+            </div>
+            <div class="features-grid-row-halfsec w-50">
+                <div class="contain-txt">
+                    <h2 class="font-x2"><br> PAETE WOOD CARVING</h2>
+                    <p class="font-x1">
+                       <br> Paete, one of the province in Laguna, is famous for their Woodcarving and is 
+                        considered as the “Woodcarving Capital of the Philippines”. <br> <br>
+                        The local term for carving is “ukit”. Paete is popular for the carving of saints and other
+                        religious images. They also produce wood panels with decorative carvings of floral patterns and florid 
+                        geometric designs. <br> <br>
+                        Paete’s name was taken from the word “paet” (or pait) means chisel, the main tool used in 
+                        woodcarving. Paete is famous for wood carved items such as statues, images, intricate 
+                        furniture and other products. <br><br> Did you know that the image of the Crucified Christ found in
+                         St.Peter’s Basilica in Rome was made also in Paete? They are also know to be maker of  
+                         paper mache products which are usually home decorations during yuletide season. 
+                         The first yo-yo is also made in Paete.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </body>
+</html>

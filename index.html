@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>REGION IV-A CALABARZON</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="containr">
+                <div class="navbar">
+                    <image src="img/logo.png" class="logo">
+                        <nav>
+                            <ul id="menuList">
+                                <li><a href="#">HOME</a></li>
+                                <li><a href="#about">ABOUT</a></li>
+                                <li><a href="archi.html#archi" target="_self">ARCHITECTURES</a></li>
+                                <li><a href="sculp.html#sculp"target="_self">SCULPTURE</a></li>
+                                <li><a href="crafts.html#crafts" target="_self">CRAFTS</a></li>
+                                <li><a href="paint.html#paint" target="_self">PAINTINGS</a></li>
+                                <li><a href="artist.html#artist" target="_self">ARTISTS</a></li>
+                            </ul>
+                        </nav>
+                    <image src="img/menu.png" class="menu" onclick="togglemenu()">
+                </div>
+            </div>
+            <div class="intro">
+                <h1>Discover</h1>
+                <h2>Culture and Creativity</h2>
+                <h3>in Region IV-A</h3>
+                <img src="img/down.png" width="130px" height="70px" class="down">
+            </div>  
+        </header>
+        <script>
+            var menuList= document.getElementById("menuList");
+            menuList.style.maxHeight="0px";
+            function togglemenu(){
+                if(menuList.style.maxHeight=="0px"){
+                    menuList.style.maxHeight="199px"
+                }
+                else{
+                    menuList.style.maxHeight="0px"
+                }
+            }
+        </script>
+<!---------------------------------ABOUT----------------------->
+        <section class="wrapper"id="about">
+            <h1>ABOUT</h1>
+            <div class="features-grid-container">
+                <div class="d-flex-r features-grid-row" id="first-row">
+                    <div class="features-grid-row-img w-50" >
+                        <img src="img/map.png" class="map">
+                    </div>
+
+                    <div class="features-grid-row-txt w-50">
+                        <div class="contain-txt">
+                            <h2 class="font-x2">CALABARZON</h2>
+                            <div>
+                                <p class="text-justify font-xs"> <br> CALABARZON (/ká-lɑ-bɑr-zon/) is one of the regions of the Philippines.
+                                     It is designated as Region IV-A and its regional center is Calamba City in Laguna.
+                                     The region is composed of five provinces, namely: Cavite, Laguna, Batangas, Rizal, and Quezon; 
+                                     whose names form the acronym CALABARZON.  The region is also more formally known
+                                      9/22/2014 as Southern Tagalog Mainland.<br>Angono in Rizal Province is considered 
+                                    as the “Art Capital of the Philippines” because of the towns rich artistic expressions that include music, painting, sculpting and folk arts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!----------------------------Architecture------------------
+        <section class="container" id="architecture">
+            <div class="d-flex-c ">
+                <h1>ARCHITECTURES</h1>
+            </div>
+            
+            <div class="div">
+                <img src="img/a1.jpg" width="300px">
+            </div>
+
+        </section>-->
+        
+    </body>
+</html>
